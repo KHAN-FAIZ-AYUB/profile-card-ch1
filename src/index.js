@@ -22,7 +22,12 @@ function Avtar() {
 }
 
 function Intro() {
-  return <p>Full-stack developer working in XYZ company Since 1998</p>;
+  return (
+    <div>
+      <h2>Faiz Ayub Khan</h2>
+      <p>Full-stack developer working in XYZ company Since 1998</p>
+    </div>
+  );
 }
 
 function SkillList() {

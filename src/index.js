@@ -25,17 +25,32 @@ function Intro() {
   return (
     <div>
       <h2>Faiz Ayub Khan</h2>
-      <p>Full-stack developer working in XYZ company Since 1998</p>
+      <p>
+        Full-stack developer by profession. State-level Swimmer. Professionla
+        Rider and Content Creator.
+      </p>
     </div>
   );
 }
 
 function SkillList() {
-  return;
+  return (
+    <div className="skill-list">
+      <Skill skill="Software Developer" emoji="👨‍💻" color="green" />
+      <Skill skill="Swimmer" emoji="🏊" color="lightblue" />
+      <Skill skill="Rider" emoji="🏍️" color="grey" />
+      <Skill skill="Vlogger" emoji="🎥" color="red" />
+    </div>
+  );
 }
 
-function skill() {
-  return;
+function Skill(props) {
+  return (
+    <div className="skill" style={{ backgroundColor: props.color }}>
+      <span>{props.skill}</span>
+      <span>{props.emoji}</span>
+    </div>
+  );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
